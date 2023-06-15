@@ -59,24 +59,33 @@ public class Exercise20_3 {
 				{"West Virginia", "Charleston"},
 				{"Wisconsin", "Madison"},
 				{"Wyoming", "Cheyenne"}
-				};
-			List<String[]> capitals = Arrays.asList(stateCapital);
-				Scanner input = new Scanner(System.in);
-				int correctCount = 0;
-				for (int i = 0; i < stateCapital.length; i++) {
-				// Prompt the user with a question
-				System.out.print("What is the capital of " + stateCapital[i][0] + "? ");
-				String capital = input.nextLine().trim().toLowerCase();
-				if (capital.toLowerCase().equals(stateCapital[i][1].toLowerCase())) {
-				System.out.println("Your answer is correct");
-				correctCount++;
-				Collections.shuffle(capitals);
-				}
-				else
-				System.out.println("The correct answer should be " + stateCapital[i][1]);
-				Collections.shuffle(capitals);
-				}
-				System.out.println("The correct count is " + correctCount);
-				}
+				
+		};
+
+	List<String[]> capitals = Arrays.asList(stateCapital);
+		Scanner input = new Scanner(System.in);
+			
+	int correctCount = 0;
+		for (int i = 0; i < stateCapital.length; i++) {
+				
+			// Prompt the user with a question
+			System.out.print("What is the capital of " + stateCapital[i][0] + "? ");
+			String capital = input.nextLine().trim().toLowerCase();
+		
+		if (capital.toLowerCase().equals(stateCapital[i][1].toLowerCase())) {
+			System.out.println("Your answer is correct");
+			correctCount++;
+			Collections.shuffle(capitals);
+				
+			}
+				
+		else
+			System.out.println("The correct answer should be " + stateCapital[i][1]);
+			Collections.shuffle(capitals);
+				
+		}
+			System.out.println("The correct count is " + correctCount);
+				
 	}
+}
 
