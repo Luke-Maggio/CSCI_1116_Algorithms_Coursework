@@ -1,3 +1,4 @@
+// 2 for loops O(n^2) = quadratic
 package exercise22_03;
 
 import java.util.Scanner;
